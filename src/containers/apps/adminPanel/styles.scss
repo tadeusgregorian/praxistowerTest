@@ -1,0 +1,186 @@
+.adminpanel{
+
+	display: flex;
+	flex: 1 1 auto;
+
+
+
+	.adminpanel-body {
+
+		display: flex;
+		flex: 1 0 auto;
+
+		button{
+			margin-bottom: 0px;
+		}
+
+		.adminpanel-navbar {
+			width: 250px;
+			border-right: 1px solid lightgrey;
+			display: flex;
+			flex: 0 0 auto;
+			flex-direction: column;
+
+			.selected {
+				background-color: #f94676;
+				color: white;
+			}
+
+			.navbar-item {
+				padding: 6px 6px 6px 42px;
+				font-size: 16px;
+				border-bottom: 1px solid rgba(211, 211, 211, 0.68);
+				padding-bottom: 10px;
+				padding-top: 10px;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+
+		.content {
+
+			width: 100%;
+
+			.inline-input-wrapper {
+				margin-bottom: 4px;
+			}
+
+			.newUserRow {
+				margin-bottom: 10px;
+				border-bottom: 1px solid lightgrey;
+				padding-bottom: 10px;
+			}
+		}
+
+		.head {
+			min-width: 180px;
+			flex: 1 0 auto;
+		}
+
+		.edit-groups {
+			display: flex;
+			height: 100%;
+
+			.edit-groups-content {
+				padding: 4px;
+		    display: flex;
+		    flex-direction: column;
+				flex: 1 1 auto;
+
+				.add-to-group-btn {
+					margin: 12px;
+				}
+
+				.group-member-list {
+					.group-member-element {
+						display: flex;
+						padding: 6px 6px 6px 18px;
+						font-size: 16px;
+						border-bottom: 1px solid rgba(211, 211, 211, 0.68);
+						padding-bottom: 4px;
+						padding-top: 8px;
+						padding-right: 20px;
+						cursor: pointer;
+
+						.group-member-name {
+							flex: 1 0 auto;
+							font-size: 1em;
+							margin: 0 20px 0 0;
+							font-weight: lighter;
+						}
+
+						.icon-bin {
+							flex: 0 0 auto;
+							font-family: "Roboto" !important;
+							font-size: 1em;
+						}
+					}
+				}
+			}
+
+			.header {
+				display: flex;
+				border-bottom: 1px solid lightgrey;
+				width: 100%;
+				padding-bottom: 4px;
+				padding-right: 20px;
+				padding-top: 12px;
+			}
+
+			.group-name {
+				flex: 1 0 auto;
+				font-size: 1.6em;
+				margin-left: 18px;
+				margin-bottom: 4px;
+			}
+
+			.groups-list {
+				width: 250px;
+				border-right: 1px solid lightgrey;
+				height: 100%;
+				display: flex;
+				flex: 0 0 auto;
+				flex-direction: column;
+
+				.groups-list-element {
+					padding: 6px 6px 6px 18px;
+					font-size: 16px;
+					border-bottom: 1px solid rgba(211, 211, 211, 0.68);
+					padding-bottom: 8px;
+					padding-top: 8px;
+					padding-right: 20px;
+					cursor: pointer;
+				}
+
+				.selected {
+					background-color: #f94676;
+					color: white;
+				}
+
+				.list-head {
+					font-weight: bold;
+					border-bottom: 1px solid grey;
+					margin-top: 6px;
+					padding-left: 7px;
+				}
+
+				.new-group-element {
+					padding: 6px 6px 6px 18px;
+					font-size: 16px;
+					border-bottom: 1px solid rgba(211, 211, 211, 0.68);
+					padding-bottom: 8px;
+					padding-top: 8px;
+					padding-right: 20px;
+					margin-top: 12px;
+					border: none;
+
+					> input {
+						margin-bottom: 6px;
+					}
+
+					> button {
+						width: 100%;
+					}
+				}
+
+				.new-group-head {
+					margin-top: 10px;
+					padding-left: 7px;
+				}
+			}
+		}
+	}
+
+	.adminpanel {
+		#topbar {
+		    display: flex;
+		    flex: 0 0 auto;
+				box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.25);
+		}
+		button {
+			height: 38px !important;
+		}
+	}
+}

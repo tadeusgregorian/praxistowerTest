@@ -1,0 +1,67 @@
+.addEditUserPopup{
+	.popupContent{
+
+		padding: 16px;
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+
+		.inputItemWrapper{
+			display: flex;
+			flex: 1 0 auto;
+	    padding: 8px 0;
+	    border-bottom: 1px solid #eaeaea;
+
+			.inputDescription{
+				white-space: nowrap;
+				flex: 0 0 auto;
+				align-items: center;
+				font-size: 18px;
+				width: 200px;
+				justify-content: flex-end;
+				margin-right: 12px;
+			}
+
+			.initialsInputField{
+				flex: 0 1 150px;
+			}
+
+			.nameInputField{
+				flex: 0 1 400px;
+			}
+
+			.colorsWrapper{
+				display:flex;
+				flex-wrap: wrap;
+				margin-left: -4px;
+
+				.userColor{
+					margin:6px;
+					width:36px;
+					height:36px;
+					flex: 0 0 auto;
+					cursor:pointer;
+
+					.icon{
+						border: none;
+						color: white;
+					}
+				}
+			}
+		}
+
+		.userinputMissingText{
+			background-color: #ff6b5c;
+	    height: 38px;
+	    border-radius: 2px;
+	    padding: 3px;
+	    padding-left: 8px;
+	    color: #ffffff;
+	    margin-bottom: 0px;
+	    justify-content: center;
+	    align-items: center;
+			font-size: 16px;
+	    margin-bottom: 22px;
+		}
+	}
+}

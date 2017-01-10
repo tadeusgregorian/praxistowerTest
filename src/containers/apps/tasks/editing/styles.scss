@@ -1,0 +1,123 @@
+.taskEditWrapper{
+	width: 100%;
+	justify-content: center;
+}
+
+.tasksEdit {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 990px;
+
+	.naviButtonBar {
+		margin-left: 14px;
+		flex: 0 0 auto;
+
+		button {
+			margin: 2px;
+			height: 32px;
+			background: #e67e22;
+			border: 1px solid #e67e22;
+			color: white;
+			border-radius: 0;
+		}
+	}
+
+	.taskEditTitle,
+	header .title {
+		letter-spacing: 2px;
+		font-weight: 100 !important;
+		margin: 24px 22px 22px;
+	}
+
+	.edit-tasks-list {
+		width: 100%;
+		font-size: 14px;
+		flex-direction: column;
+		flex: 1 0 auto;
+
+		.editButtonWrapper {
+			> * {
+				margin: 4px;
+				display: flex!important;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		.title {
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+			max-width: 380px;
+		}
+	}
+
+	.createdTasksContent {
+		.createdTaskDropdown {
+			.header {}
+
+			.replacementBox {
+				flex-direction: column;
+				flex: 0 0 auto;
+
+				.header {
+					font-size: 18px;
+					margin-bottom: 6px;
+				}
+
+				.replacementList {
+					flex-direction: column;
+
+					.replacementRow {
+						&:last-child {
+							padding-bottom: 0;
+						}
+						padding-bottom: 10px;
+						padding-top: 10px;
+
+						.inBetweenText {
+							color: rgba(0, 0, 0, 0.84);
+							font-size: 12px;
+							padding-top: 4px;
+						}
+
+						.replacedByUserWrapper {
+							cursor: pointer;
+
+							> fb {
+								border-radius: 24px;
+								box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.28);
+							}
+						}
+
+						.miniReplacementUser {
+							color: white;
+							border-radius: 2px;
+							width: 161px;
+							flex: 0 0 auto;
+							justify-content: center;
+							font-weight: 300;
+							height: 24px;
+							font-size: 15px;
+						}
+
+						.replacementNone {
+							border-radius: 14px;
+							width: 161px;
+							flex: 0 0 auto;
+							justify-content: center;
+							height: 24px;
+							font-size: 12px;
+							background: white;
+							box-shadow: 0 0 3px #a9a5a5;
+							font-weight: 500;
+							text-transform: uppercase;
+							align-items: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}

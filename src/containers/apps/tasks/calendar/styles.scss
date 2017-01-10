@@ -1,0 +1,20 @@
+.calendar {
+	background: #f2f2f2;
+	overflow-x: hidden;
+	padding: 0;
+	flex-direction: row;
+	justify-content: center;
+	padding: 12px;
+	margin-top: 16px;
+	.daysWrapper {
+		position: relative;
+		overflow: auto;
+		width: 100%;
+		flex-direction: column;
+		max-width: 990px;
+	}
+
+	.addEditTaskWizard{
+		max-width: 500px;
+	}
+}

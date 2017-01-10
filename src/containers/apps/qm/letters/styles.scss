@@ -1,0 +1,81 @@
+.qmLettersMainWrapper {
+	header{
+		padding-top: 0px;
+		display: flex;
+		justify-content: space-between;
+		align-content: space-between;
+
+		icon{
+			font-size: 22px;
+			margin: 2px;
+			padding: 2px;
+			align-items: flex-end;
+			padding-bottom: 11px;
+			color: grey;
+		}
+
+		.filterUnreadCheckbox{
+			width: 240px;
+			justify-content: flex-end;
+			height: 36px;
+			align-items: flex-end;
+			margin-left: 20px;
+			padding: 6px;
+			margin-top: 21px;
+			padding-left: 16px;
+			border-radius: 1px;
+			padding-right: 0px;
+		}
+	}
+
+	.qmLetters{
+		padding-top: 0px;
+		flex: 1 1 auto;
+		position: relative;
+		flex-direction: column;
+		min-height: 100px;
+	}
+}
+
+
+.fileUpload {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.file {
+	flex: 0 0 auto;
+  background: rgba(0,0,0,0.07);
+  border-radius: 2px;
+	&:not(:last-child) {
+  	margin: 0 0 6px 0;
+	}
+	&.notUploadedYet {
+		background: #d7ecd2;
+	}
+	align-items: center;
+	.name {
+		padding: 6px 6px 6px 10px;
+	}
+}
+
+.iconButton {
+  margin: 0!important;
+  padding: 0!important;
+  width: 60px!important;
+  max-width: 50px!important;
+	min-width: 50px!important;
+	max-height:  37px!important;
+	min-height: 37px!important;
+	height: 37px!important;
+	line-height: 25px!important;
+	background: rgba(0,0,0,0.07)!important;
+	border-radius: 0!important;
+	&:first-child {
+		border-right: solid 1px rgba(255,255,255,0.6)!important;
+	}
+}

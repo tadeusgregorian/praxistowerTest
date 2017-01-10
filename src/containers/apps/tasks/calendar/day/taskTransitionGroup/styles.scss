@@ -1,0 +1,21 @@
+.taskAnimation-enter {
+	transition: all 0.15s linear;
+	opacity: 0;
+	height: 0;
+}
+
+.taskAnimation-enter-active {
+	opacity: 1;
+	height: 52px;
+}
+
+.taskAnimation-leave {
+	opacity: 1;
+	height: 52px;
+	transition: all 0.15s linear;
+}
+
+.taskAnimation-leave-active {
+	opacity: 0;
+	height: 0;
+}

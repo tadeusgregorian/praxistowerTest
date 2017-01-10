@@ -1,0 +1,74 @@
+.select-member-popup {
+	.popup-content {
+		padding: 16px;
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+
+		.username-button {
+			flex: 0 0 auto;
+		}
+	}
+}
+
+.create-group-popup {
+	.popup-content {
+		padding: 16px;
+		display: flex;
+	}
+}
+
+.enterPinPopup {
+	.icon-close {
+		position: absolute;
+		right: -10px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.color-picker-popup {
+	.color-picker-content {
+		flex-wrap: wrap;
+		padding: 10px;
+		align-content: flex-start;
+		flex-grop: 0;
+
+		.color-box {
+			flex: 0 0 auto;
+			height: 42px;
+			width: 42px;
+			margin: 6px;
+			color: white;
+		}
+
+		.round-color-box {
+			border-radius: 35px;
+		}
+	}
+}
+
+.replacementPopup {
+	.selectableUserWrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		.selectableUser {
+			margin: 4px;
+			border: 1px solid grey;
+			border-radius: 4px;
+			padding: 2px 12px;
+			width: 208px;
+			flex: 0 0 auto;
+			justify-content: center;
+			cursor: pointer;
+
+			&.selected {
+				background: #f94676;
+				border-color: #f94676;
+				color: white;
+				font-weight: 400;
+			}
+		}
+	}
+}

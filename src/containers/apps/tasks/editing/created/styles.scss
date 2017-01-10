@@ -1,0 +1,99 @@
+.searchFilterBar {
+	font-size: 17px;
+	padding: 11px 4px 21px 18px;
+	align-items: center;
+	color: #545454;
+	font-weight: 400;
+	border-bottom: solid 1px lightgray;
+	flex: 0 0 auto;
+	height: 82px;
+
+	.selectFieldWrapper{
+		>div >div >div >div{
+			padding:0px !important;
+		}
+	}
+
+	.searchFieldWrapper{
+		padding-top:23px;
+		.icon {
+			padding: 0px 6px;
+		}
+	}
+
+	.checkboxWrapper{
+		font-size: 13px;
+    padding: 4px;
+    width: 195px;
+    height: 32px;
+    padding-left: 14px;
+    margin-top: 30px;
+	}
+
+	.filterActivesCheckbox{
+		width: 200px;
+    justify-content: flex-end;
+    height: 36px;
+    align-items: flex-end;
+    margin-left: 20px;
+    background-color: lightgrey;
+    padding: 6px;
+    margin-top: 17px;
+    padding-left: 16px;
+    border-radius: 1px;
+    padding-right: 0px;
+	}
+
+	> fb {
+		flex: 0 0 auto;
+		margin-right: 16px;
+	}
+}
+
+.taskListWrapper{
+	overflow: scroll;
+
+	.assignedUsers{
+		width: 200px;
+		flex: 0 0 auto;
+		justify-content: flex-end;
+
+		icon{
+			width: 22px;
+			justify-content: center;
+			align-items: center;
+			font-size: 18px;
+			padding: 0px;
+			height: 22px;
+			margin-top: 1px;
+			padding-bottom: 1px;
+			border-radius: 3px;
+			margin-left: 3px;
+		}
+
+		.userWrapper {
+			justify-content: flex-end;
+		}
+	}
+
+	.headerRow{
+		font-size: 13px;
+    height: 24px;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid lightgrey;
+    color: #3f3f3f;
+    background-color: #d3d3d3;
+    font-weight: bold;
+		.creator{
+			font-size:13px;
+		}
+		.taskInfo{
+			font-size:13px;
+		}
+	}
+}
+
+.edit-tasks-list :hover{
+	background-color: #e1e1e1 ;
+}

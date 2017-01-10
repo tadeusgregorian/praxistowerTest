@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,100,300,700,900);
+@import url( 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700,700i');
+@font-face {
+	font-family: 'RBNo2Light';
+	src: url('../../fonts/RBNo2Light.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'airstrike';
+	src: url('../../fonts/airstrike-webfont.woff2') format('woff2'),
+			 url('../../fonts/airstrike-webfont.ttf') format('truetype'),
+			 url('../../fonts/airstrike-webfont.woff') format('woff'),
+			 url('../../fonts/Airstrike.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a,
+a,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+	font-family: 'Roboto', sans-serif!important;
+	margin: 0;
+}
+
+.user {
+	font-family: 'RBNo2Light' !important;
+}

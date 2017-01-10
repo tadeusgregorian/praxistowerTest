@@ -1,0 +1,67 @@
+.tasksDay {
+	flex: 0 0 30%;
+	min-width: 400px;
+	padding: 12px 10px 0;
+	max-width: 30vw;
+	will-change: transform;
+	padding-bottom: 6px;
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	flex: 1 0 auto;
+	max-width: none;
+	min-width: none;
+	border: none!important;
+	box-shadow: none!important;
+
+	> * {
+		border: none!important;
+		box-shadow: none!important;
+	}
+
+	&:not(:last-child) {
+		border-right: 1px solid rgba(97, 97, 97, 0.10);
+	}
+	border-radius: 0;
+	flex-direction: column;
+
+	&.isToday {
+		background: none;
+	}
+
+	.tasksWrapper {
+		flex-direction: column;
+		flex: 1 1 auto;
+		overflow-y: overlay;
+		overflow-x: hidden;
+
+		&::-webkit-scrollbar-track {
+			margin-top: 5px;
+			background-color: rgba(239, 239, 239, 0);
+			border-radius: 0;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: #e0e0e0;
+				border: solid 1px rgba(179, 179, 179, 0.44);
+				border-radius: 2px;
+		}
+		&::-webkit-scrollbar {
+			background-color: rgba(239, 239, 239, 0);
+			border-radius: 0;
+			width: 8px;
+			height: 6px;
+		}
+	}
+
+	.noTasksBlock {
+		justify-content: center;
+		align-items: center;
+		height: 80px;
+		background: #e5e5e5;
+		border-radius: 5px;
+	}
+}

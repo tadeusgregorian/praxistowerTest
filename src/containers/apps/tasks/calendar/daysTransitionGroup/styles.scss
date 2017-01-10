@@ -1,0 +1,40 @@
+.animationWrapperElement {
+	overflow: hidden;
+	position: relative;
+}
+
+.tasksDayAnimation-forward-leave {
+	transform: translateX(0);
+}
+
+.tasksDayAnimation-forward-leave-active {
+	transform: translateX(-150%);
+	transition: transform 0.3s ease-out;
+}
+
+.tasksDayAnimation-forward-enter {
+	transform: translateX(150%);
+}
+
+.tasksDayAnimation-forward-enter-active {
+	transform: translateX(0);
+	transition: transform 0.3s ease-out;
+}
+
+.tasksDayAnimation-backward-leave {
+	transform: translateX(0);
+}
+
+.tasksDayAnimation-backward-leave-active {
+	transform: translateX(150%);
+	transition: transform 0.3s ease-out;
+}
+
+.tasksDayAnimation-backward-enter {
+	transform: translateX(-150%);
+}
+
+.tasksDayAnimation-backward-enter-active {
+	transform: translateX(0);
+	transition: transform 0.3s ease-out;
+}

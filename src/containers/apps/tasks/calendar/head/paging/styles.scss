@@ -1,0 +1,29 @@
+.paging {
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  position: relative;
+	width: 44px;
+
+	icon{
+		border: none !important;
+		font-size: 19px;
+		display: flex;
+	}
+
+	&.paging-left{
+		border-radius: 1px 0px 0px 1px;
+	}
+
+	&.paging-right{
+		border-radius: 0px 1px 1px 0px;
+	}
+
+  span {
+    font-size: 40px!important;
+  }
+
+  button {
+    background-color: rgba(0, 0, 0, 0)!important;
+  }
+}

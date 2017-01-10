@@ -1,0 +1,46 @@
+.taskDetailsPopup{
+	header{
+		.assignedUsersWrapper{
+			justify-content: flex-start;
+			padding-top:6px;
+			.mini {
+				cursor: default!important;
+			}
+		}
+	}
+}
+
+.selectedUserRow {
+	width: 430px;
+  border: 1px solid lightgrey;
+  padding: 3px 7px;
+  flex: 0 0 auto;
+  margin-bottom: 0px;
+  border-radius: 3px;
+  background-color: #ececec;
+
+	> .textfb {
+		justify-content: center;
+		margin: 0px 4px;
+		padding: 2px 0px;
+		flex: 0 0 auto;
+	}
+
+	.replacementButtonWrapper {
+		.selected-user-name {
+			margin: 0px 20px;
+			padding: 2px 12px;
+			flex: 1 1 auto;
+			justify-content: center;
+			font-weight: normal;
+			width: none;
+		}
+		icon {
+			padding: 2px 4px;
+			border: none;
+			flex: 0 0 auto;
+			text-align: left;
+			justify-content: flex-end;
+		}
+	}
+}

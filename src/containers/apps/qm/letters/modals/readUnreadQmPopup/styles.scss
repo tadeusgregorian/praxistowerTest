@@ -1,0 +1,22 @@
+.readUnreadQmPopup{
+	header{
+		.assignedUsersWrapper{
+			justify-content: flex-start;
+			padding-top:2px;
+			.mini {
+				cursor: default!important;
+			}
+		}
+		h4 {
+			font-size: 26px!important;
+			margin-bottom: 12px;
+		}
+	}
+
+	.editDeleteButtonWrapper{
+		justify-content: flex-end;
+		> * {
+			margin-right: 8px;
+		}
+	}
+}

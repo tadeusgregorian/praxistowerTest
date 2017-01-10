@@ -1,0 +1,112 @@
+
+@font-face {
+	font-family: 'airstrike';
+	src: url('../../../../../../fonts/airstrike-webfont.woff2') format('woff2'),
+			 url('../../../../../../fonts/airstrike-webfont.ttf') format('truetype'),
+			 url('../../../../../../fonts/airstrike-webfont.woff') format('woff'),
+			 url('../../../../../../fonts/Airstrike.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.daysWrapper {
+	> .head {
+		flex: 0 0 auto;
+		padding: 6px 28px 6px 12px;
+		color: #656464;
+		text-transform: capitalize;
+		position: relative;
+		font-size: 26px;
+		padding-bottom: 0;
+		font-weight: lighter;
+		justify-content: flex-start;
+		align-items: center;
+
+		.date {
+			font-weight: 200;
+	    font-size: 29px;
+	    margin-left: 6px;
+	    text-shadow: 1px 1px rgba(255, 255, 255, 0.41);
+	    text-align: center;
+	    height: 40px;
+	    align-items: center;
+	    padding-left: 6px;
+	    color: #424242;
+		}
+
+		.futurePastIndicator{
+			font-family: airstrike;
+	    color: #ff5034;
+	    justify-content: flex-end;
+	    padding-right: 36px;
+		}
+
+		.todayPrefix {
+			font-weight: bold;
+			flex: 0 0 auto;
+			margin-right: 4px;
+			padding: 0 4px 0 6px;
+			border-radius: 2px;
+			font-weight: 900;
+			font-size: 23px;
+			letter-spacing: 2.9px;
+			text-transform: none;
+		}
+	}
+
+	&.inUserMode {
+		> .head {
+			padding: 6px 12px 12px 47px;
+		}
+	}
+
+	&.isToday {
+		> .head {
+			flex-direction: row;
+
+			.todayPrefix {
+				font-size: 26px;
+				margin-right: 6px;
+				padding-left: 0;
+			}
+		}
+	}
+
+	.dayControl {
+		border-radius: 2px;
+
+		> * {
+			box-sizing: border-box;
+			height: 40px;
+			font-size: 15px;
+			align-items: center;
+			justify-content: center;
+			align-items: center;
+			padding: 0px;
+			color: #555555;
+			margin-bottom: 0px;
+			border-radius: 0px;
+			background-color: rgba(214, 214, 214, 0.64);
+
+			&:active{
+				background-color: lightgrey;
+			}
+		}
+
+		.jumpToTodayButton{
+	    width: 89px;
+			border:none;
+		}
+
+		.jumpToDateIcon{
+			width: 44px;
+			border:none;
+		}
+
+		flex: 0 0 auto;
+		span {
+			padding: 0!important;
+		}
+	}
+
+}

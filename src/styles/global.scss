@@ -1,0 +1,197 @@
+
+
+$border: 1px solid $border-color;
+html, body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.offset {
+    margin: 0 -12px;
+    > * {
+        margin: $global-padding;
+    }
+}
+
+.padding-right {
+    padding-right: $global-padding;
+}
+
+.padding-right-double {
+	padding-right: $global-padding * 2;
+}
+
+.padding-left {
+    padding-left: $global-padding;
+}
+
+.padding-left-double {
+	padding-left: $global-padding * 2;
+}
+
+.padding-top {
+    padding-top: $global-padding;
+}
+
+.padding-top-double {
+	padding-top: $global-padding * 2;
+}
+
+.padding-bottom {
+    padding-bottom: $global-padding;
+}
+
+.padding-bottom-double {
+	padding-bottom: $global-padding * 2;
+}
+
+.padding {
+    padding: $global-padding;
+}
+
+.margin-left {
+	margin-left: $global-padding;
+}
+
+.margin-right {
+	margin-right: $global-padding;
+}
+
+.margin-top {
+	margin-top: $global-padding;
+}
+
+.margin-bottom {
+	margin-bottom: $global-padding;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+
+@mixin noSelect() {
+	user-select: none;
+}
+
+
+.user-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+fb, fb {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.no-shrink {
+    flex-shrink: 0;
+}
+
+.no-grow {
+    flex-grow: 0;
+}
+
+.shrink {
+    flex-shrink: 1;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.horizontal {
+	flex-direction: row;
+}
+
+.vertical {
+	flex-direction: column;;
+}
+
+right {
+	justify-content: flex-end;
+}
+
+left {
+	justify-content: flex-start;
+}
+
+center {
+	justify-content: center;
+}
+
+left, right, center {
+	flex-direction: row;
+	display: flex;
+	align-items: center;
+	flex: 1 0 auto;
+}
+
+
+.offset {
+	&.only-horizontal {
+		> * {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+	}
+	&.slim {
+		margin: 0 -3px;
+		> * {
+			margin: 3px;
+		}
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+._1-of-3 {
+	flex-basis: 33.3333333%;
+}
+
+._1-of-2 {
+	flex-basis: 50%;
+}
+
+.a-center {
+	align-items: center;
+}
+
+.a-end {
+	align-items: flex-end;
+}
+
+.j-end {
+	justify-content: flex-end;
+}
+
+.j-center {
+	justify-content: center;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.overflowY {
+	overflow-y: auto;
+}
