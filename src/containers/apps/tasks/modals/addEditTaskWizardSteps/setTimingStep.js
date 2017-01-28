@@ -337,7 +337,7 @@ export default class SetTimingStep extends Component {
 					</fb>
 					<fb className="no-grow no-shrink">
 						{ this.renderReapeatEveryBox("Jedes Jahr", "Jahre") }
-						{ this.renderWithDateBox("s", "withStartDate", "Startdatum", true, this.props.initData) }
+						{ this.renderWithDateBox("startDate", "withStartDate", "Startdatum", true, this.props.initData) }
 					</fb>
 					<fb className="margin-top no-shrink panel">{ this.renderWithDateBox("endDate", "withEndDate", "Enddatum") }</fb>
 					<fb className="margin-top no-shrink panel">{this.renderDetailedTime()}</fb>
